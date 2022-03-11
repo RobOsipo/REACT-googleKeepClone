@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 ReactDOM.render(
   
-    <App />
+    <h1>hello</h1>
   ,
   document.getElementById('root')
 );
