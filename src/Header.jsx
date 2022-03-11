@@ -1,8 +1,8 @@
 import React from "react";
 
 
-function Header(props) {
-    console.log(props)
+function Header() {
+    
     return (
         <header>
             <h1>Google Keeper App</h1>
