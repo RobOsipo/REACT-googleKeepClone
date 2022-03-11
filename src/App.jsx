@@ -7,7 +7,7 @@ import Note from "./Note.jsx"
 function App() {
    return (
        <div>
-        <Header />
+        <Header name="stuff" />
         <Note />
         <Footer />
        </div>
