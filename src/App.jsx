@@ -26,13 +26,13 @@ function App() {
       });
     }
 
-    const noteComponents = notes.map((note) => {
-        return <Note 
-        key={note.key}
-        title={note.title}
-        content={note.content}
-        />
-    })
+    // const noteComponents = notes.map((note) => {
+    //     return <Note 
+    //     key={note.key}
+    //     title={note.title}
+    //     content={note.content}
+    //     />
+    // })
 
 
 
@@ -40,7 +40,17 @@ function App() {
        <div>
         <Header />
         <CreateArea onAdd={addNote} />
-        {noteComponents}
+        {notes.map((noteItem, index) => {
+        return (
+          <Note
+            key={index}
+            id={index}
+            title={noteItem.title}
+            content={noteItem.content}
+            onDelete={deleteNote}
+          />
+        );
+      })}
         <Footer />
        </div>
        
