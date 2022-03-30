@@ -5,7 +5,7 @@ function Header() {
     
     return (
         <header>
-            <h1>Google Keeper App</h1>
+            <h1>Take a Note, Take a load off</h1>
         </header>
     )
 }
